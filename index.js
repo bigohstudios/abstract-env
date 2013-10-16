@@ -1,3 +1,5 @@
+var fs = require("fs")
+
 exports.env = function() {
   return new envAbstraction().env() 
 }
@@ -25,7 +27,12 @@ envAbstraction.prototype = {
 , file: function(path) {
     path = path || process.cwd() + "/.env.json"
 
-    var config = require(path)
+    var config
+    if (fs.existsSync(path) {
+      config = require(path)
+    } else {
+      config = {}
+    }
 
     for(var prop in config) {
       if (config.hasOwnProperty(prop)) {
