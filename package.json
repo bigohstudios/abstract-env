@@ -1,0 +1,33 @@
+{
+  "name": "abstract-env",
+  "version": "0.0.0",
+  "description": "Abstracts environment settings allowing them to be supplied from the command-line, environment variables, or a file.",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:bigohstudios/abstract-env.git"
+  },
+  "keywords": [
+    "environment",
+    "config",
+    "configuration",
+    "settings"
+  ],
+  "author": "Ethan Garofolo",
+  "maintainers": [
+    {
+      "name": "Ethan Garofolo",
+      "email": "ethan@bigohstudios.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bigohstudios/abstract-env/issues"
+  },
+  "devDependencies": {
+    "mocha": "1.8.x"
+  }
+}
