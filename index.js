@@ -28,7 +28,7 @@ envAbstraction.prototype = {
     path = path || process.cwd() + "/.env.json"
 
     var config
-    if (fs.existsSync(path) {
+    if (fs.existsSync(path)) {
       config = require(path)
     } else {
       config = {}
